@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Iransans";
+    src: url("/public/fonts/IRANSansWeb-Light.woff");
+    src: url("/public/fonts/IRANSansWeb-Light.woff2");
+    src: url("/public/fonts/IRANSansWeb-Light.ttf");
+    src: url("/public/fonts/IRANSansWeb-Light.eot");
+  }
+}
+@layer components {
+  .HL {
+    @apply desktop:w-[98%] desktop:h-[2px] desktop:bg-[lightgray] desktop:mx-auto desktop:rounded-[9999px];
+  }
+  .HLM {
+    @apply mobile:w-[98%] mobile:h-[2px] mobile:bg-[lightgray] mobile:mx-auto mobile:rounded-[9999px] desktop:hidden;
+  }
+}
